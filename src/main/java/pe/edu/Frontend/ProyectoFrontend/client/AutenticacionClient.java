@@ -11,7 +11,7 @@ import pe.edu.Frontend.ProyectoFrontend.dto.LoginResponseDTO;
 
 import java.util.List;
 
-@FeignClient(name = "autenticacion-client", url = "http://localhost:8091/autenticar", configuration = FeignClientConfig.class)
+@FeignClient(name = "autenticacion-client", url = "https://pf-backend-19-ejatagduh5fahme7.canadacentral-01.azurewebsites.net/autenticar", configuration = FeignClientConfig.class)
 public interface AutenticacionClient {
 
     @PostMapping("/login")
